@@ -2,7 +2,7 @@
 
 A Go SDK and CLI for the **Pentair Home cloud API**: the unofficial, reverse-engineered service behind the Pentair Home mobile app. It covers IntelliFlo 3 pumps, IntelliConnect controllers, Color Sync lights and the other products the app supports.
 
-The project follows the structure and conventions of the sibling project [`goaquatemp`](../goaquatemp): an importable root package, internals hidden under `internal/`, a cobra-based CLI under `cmd/`, a fake server for tests, and a written record of the API kept in `docs/api-docs.md`. See [docs/research.md](docs/research.md) for the research this is based on.
+The project follows the structure and conventions of the sibling project [`goaquatemp`](https://github.com/emergingrobotics/goaquatemp): an importable root package, internals hidden under `internal/`, a cobra-based CLI under `cmd/`, a fake server for tests, and a written record of the API kept in `docs/api-docs.md`. See [docs/research.md](docs/research.md) for the research this is based on.
 
 ---
 
