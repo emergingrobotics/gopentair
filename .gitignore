@@ -1,0 +1,7 @@
+/pentair
+/bin/
+coverage.out
+coverage.html
+.env
+.envrc
+*~

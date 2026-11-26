@@ -1,0 +1,63 @@
+{
+ "sigv4": [
+  {
+   "method": "GET",
+   "url": "https://api.pentair.cloud/device/device-service/user/devices",
+   "body": null,
+   "headers": {
+    "x-amz-id-token": "IDTOKEN"
+   },
+   "authorization": "AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20261125/us-west-2/execute-api/aws4_request, SignedHeaders=host;x-amz-date;x-amz-id-token;x-amz-security-token, Signature=bccdd402c0a25b094c3922ed370d3165d588f84979143e07892e5515b3fcba42",
+   "amzdate": "20261125T220627Z"
+  },
+  {
+   "method": "POST",
+   "url": "https://api.pentair.cloud/device2/device2-service/user/device",
+   "body": "{\"deviceIds\":[\"abc\"]}",
+   "headers": {
+    "x-amz-id-token": "IDTOKEN",
+    "content-type": "application/json; charset=UTF-8"
+   },
+   "authorization": "AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20261125/us-west-2/execute-api/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-id-token;x-amz-security-token, Signature=80ff55453c2bfd5f608a56774a008f92b790345dc4028b3f95b758c00bde218c",
+   "amzdate": "20261125T220627Z"
+  },
+  {
+   "method": "PUT",
+   "url": "https://api.pentair.cloud/device/device-service/user/device/abc",
+   "body": "{\"payload\":{\"d13\":\"1\"}}",
+   "headers": {
+    "x-amz-id-token": "IDTOKEN",
+    "content-type": "application/json; charset=UTF-8"
+   },
+   "authorization": "AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20261125/us-west-2/execute-api/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-id-token;x-amz-security-token, Signature=1bb4cbd909eedcdcc617a729f372abfb2c29ede768d4f05845d44261a4769ea4",
+   "amzdate": "20261125T220627Z"
+  },
+  {
+   "method": "GET",
+   "url": "https://api.pentair.cloud/a/b?z=1&a=2&a=1",
+   "body": null,
+   "headers": {
+    "x-amz-id-token": "IDTOKEN"
+   },
+   "authorization": "AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20261125/us-west-2/execute-api/aws4_request, SignedHeaders=host;x-amz-date;x-amz-id-token;x-amz-security-token, Signature=048e0276cfb0862289355936c512b53056ddaf5e9770f345b5e64a833b9a23a1",
+   "amzdate": "20261125T220627Z"
+  }
+ ],
+ "srp": {
+  "a": "5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555",
+  "A": "d8d07c3a4392705118797fb5fdbe0de8cf7c40683f0aa58084c9a24be8ad0622ba197c5ab65ed9d593db219319c80eb3acd219d5338e7f5c7cf900ff9d96647a639b01bff54e8b4441b0a707ffd9cc7efb51489c4c31856b6fe08f717bea37d84d521625431db65d47155a6ccb993a3978d1907b574d7e1564d7f5ebe711879f2168543caeca2bd72d99a0107550a46c601e75a8724adfec205c3654673af9b9137415b74f1134155dffcc594469697f6955286b60157ecb73e814605563d9be512ff2bd92cf87b61e17ca3f1b3775fcf041c85a2b202e7abb13ce8f021997ebb1802d15ac1d662fc4a1305d4b597053b39fbb37eaf09d8d5d3af91e2f6151f76a58c002f2930c12bedf6ecbbdaf8ac08b64846a0c746c5cb26ef546c57d1d5d34b32fa7c20fa9bf608ca862ed07ec71d236cddfee8e78075dc17cb587d26a5433acabcc428ce2c33c939494f635bfcce226dcafeb861294122ec4ad334719c708eaa6478b8ca1abc828a071988541a1ea654d1f44c4e241def9625a4779e04d",
+  "salt": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+  "B": "ffbd730536359bb9d3905f2ce89e41720413e624cd5e7aed2261e505f17b9ea11d7e0e128c5aa4f47b7cf0115aaf345438d47bb3f39184b2851594ae6a90eb8699675e87c360421fde9db96f6784bbb39045a20e09520751a50d1d4daa6ff8232f7429eb35127bce4561e3370d353367bc99392eb89b7fd6162024e8b9d8aa11ade9c0d9fedfa3649b76006b88afcf4f1328a532d0008ef440d8c6c091a7f70a9625b5c264a53d7e175557c99a078ef744265b5a7d03e76c86383c1b80c6323932a48f2efc92ceb881cdafaa061be295978f0600d3554412d4c7a93d95a684a878f383cfe1121c09bafe6d9efed6ab0af8bbcfeb037c06369341a93b401f70fce5146b3578e79714a36b3e344eb994bcc0dfc83b06ae271e5a74c1367638aa58f103fcf06d424084695c78aec5e8a97305b538d340537ca7da9425cfec81e7d3214fccd10fcbd823f96dbe8498b08f340f647dccbb2f0f83162f87505abc5965f572aca7070bb1b043704b5237642d26cfd6dee53d79012ae14725032ca0095a",
+  "b": "77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777",
+  "user_id": "11111111-2222-3333-4444-555555555555",
+  "password": "Secret123!",
+  "pool": "us-west-2_lbiduhSwD",
+  "secret_block": "c2VjcmV0LWJsb2NrLWJ5dGVz",
+  "response": {
+   "TIMESTAMP": "Thu Nov 5 09:08:07 UTC 2026",
+   "USERNAME": "11111111-2222-3333-4444-555555555555",
+   "PASSWORD_CLAIM_SECRET_BLOCK": "c2VjcmV0LWJsb2NrLWJ5dGVz",
+   "PASSWORD_CLAIM_SIGNATURE": "n+1aovYO5MUsioxbIoADTaGUgNC1Kkoe8LUpveD5jr8="
+  }
+ }
+}
